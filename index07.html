@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人作品集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 0px;
+            background-color: #f4f4f4;
+            color: #333;
+		    width: 80%;
+		
+		
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+		
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        header nav {
+            float: center;
+            margin-top: auto;
+        }
+
+        header nav ul {
+            padding: 0;
+        }
+
+        header nav li {
+            display: inline;
+            padding: 0 20px;
+        }
+
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #35424a;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .edit-button {
+            background: #e8491d;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .stat-item {
+            background: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .activity-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .activity-list li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+        }
+
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px) {
+            header nav, 
+            header nav li {
+                float: none;
+                text-align: center;
+                padding: 5px;
+            }
+            
+            .profile-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .avatar {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>瑃菲的个人作品</h1>
+            <nav>
+                <ul>
+                    <li><a href="index02.html">主页</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#contact">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <div class="profile-info">
+                <img src="2.jpg" alt="头像" class="avatar">
+                <div>
+                    <h2>瑃菲</h2>
+                    <p>法学院</p>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>我的作品</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>《毛泽东传》读书感悟</h3>
+                    <p>学习毛泽东思想</p>
+                    <a href="index05.html" class="edit-button">查看详情</a>
+                </div>
+                <div class="stat-item">
+                    <h3>法学角度的《十二怒汉》</h3>
+                    <p>人性与正义的正面交锋</p>
+                    <a href="#" class="edit-button">查看详情</a>
+                </div>
+                <div class="stat-item">
+                    <h3>法庭实践</h3>
+                    <p>当书记员的一天</p>
+                    <a href="#" class="edit-button">查看详情</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>关于我</h2>
+            <p>瑃菲是法学院一名大二学生，兴趣爱好广泛</p>
+        </section>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <ul class="activity-list">
+                <li>邮箱：32066xyz@qq.com</li>
+                <li>电话：18093611993</li>
+                
+                
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 瑃菲的个人作品集. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
